@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://c06magsxmvvg6"]
+
+[ext_resource type="Script" uid="uid://gl8h32j6ynaj" path="res://previews/preview_sniper.gd" id="1_3mh16"]
+[ext_resource type="Texture2D" uid="uid://ihbfdorfbcwm" path="res://Texturas/TexturasReales/sniper_tropa.png" id="1_q25gu"]
+
+[node name="PreviewSniper" type="Node2D" unique_id=1865958053]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_3mh16")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=2014976114]
+position = Vector2(15.895121, -5.684342e-14)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_q25gu")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=751294961]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

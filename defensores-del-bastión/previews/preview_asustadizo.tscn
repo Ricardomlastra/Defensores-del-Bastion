@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://du86220t5tqdt"]
+
+[ext_resource type="Texture2D" uid="uid://ben0jsxue72y" path="res://Texturas/TexturasReales/asustadizo_tropa.png" id="1_swuip"]
+[ext_resource type="Script" uid="uid://nfijc2n8qmf4" path="res://previews/preview_asustadizo.gd" id="1_v00ms"]
+
+[node name="PreviewAsustadizo" type="Node2D" unique_id=1403234413]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_v00ms")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=420990282]
+position = Vector2(0, -16)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("1_swuip")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=2054852689]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://uid3gnix32lf"]
+
+[ext_resource type="Script" uid="uid://dfs2ddlyacniv" path="res://scenes/scripts/Tropas/mago_electrico.gd" id="1_6cytk"]
+[ext_resource type="Texture2D" uid="uid://csxmb8f2yuyhh" path="res://Texturas/TexturasReales/mago_electrico_tropa.png" id="2_6cytk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6cytk"]
+size = Vector2(266, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vkmpo"]
+size = Vector2(32, 32)
+
+[node name="MagoElectrico" type="CharacterBody2D" unique_id=2010822984 groups=["tropas"]]
+script = ExtResource("1_6cytk")
+
+[node name="Detector" type="Area2D" parent="." unique_id=1613398113]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=564334648]
+position = Vector2(123, 0)
+shape = SubResource("RectangleShape2D_6cytk")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=730573826]
+position = Vector2(23.999998, -7.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_6cytk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1031548032]
+shape = SubResource("RectangleShape2D_vkmpo")
+debug_color = Color(0.57125926, 0.40031025, 0.976687, 0.41960785)
+
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=630271792]
+modulate = Color(0.8150196, 3.5857408e-06, 7.70092e-07, 1)
+offset_left = -32.0
+offset_top = -40.0
+offset_right = 32.0
+offset_bottom = -24.13591
+show_percentage = false
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

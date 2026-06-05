@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://cxgp6it3yfeeu"]
+
+[ext_resource type="Script" uid="uid://cba0mq27da0cu" path="res://scenes/scripts/enemigo.gd" id="1_hlx46"]
+[ext_resource type="Texture2D" uid="uid://dbhsvfc70aicj" path="res://Texturas/TexturasReales/enemigo.png" id="2_hlx46"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pe0jf"]
+size = Vector2(64, 64.90872)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hlx46"]
+size = Vector2(140, 32)
+
+[node name="Enemigo" type="CharacterBody2D" unique_id=977110587 groups=["enemigos"]]
+scale = Vector2(0.5, 0.493)
+script = ExtResource("1_hlx46")
+
+[node name="Sprite2D(sin textura)" type="Sprite2D" parent="." unique_id=916174432]
+scale = Vector2(0.123, 0.123)
+texture = ExtResource("2_hlx46")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1363372182]
+shape = SubResource("RectangleShape2D_pe0jf")
+
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=765597368]
+modulate = Color(0.8150196, 3.5857408e-06, 7.70092e-07, 1)
+offset_left = -64.0
+offset_top = -97.36308
+offset_right = 64.0
+offset_bottom = -70.36308
+show_percentage = false
+
+[node name="Detector" type="Area2D" parent="." unique_id=754041942]
+position = Vector2(-64, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=1320696285]
+position = Vector2(6, 0)
+shape = SubResource("RectangleShape2D_hlx46")
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dnejdg4mrsqb4"]
+
+[ext_resource type="Script" uid="uid://bf4amsxscdq7f" path="res://scenes/scripts/carta.gd" id="1_t1fvr"]
+
+[node name="Carta" type="TextureRect" unique_id=1526521949]
+offset_right = 16.0
+offset_bottom = 16.0
+mouse_filter = 0
+script = ExtResource("1_t1fvr")

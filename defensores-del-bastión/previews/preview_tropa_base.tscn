@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cxrmvnnbdwed6"]
+
+[ext_resource type="Texture2D" uid="uid://b6wjk66gc6ug" path="res://Texturas/TexturasReales/tropa_base_tropa.png" id="1_tmk2p"]
+[ext_resource type="Script" uid="uid://chvpodcaqeubk" path="res://previews/preview_tropa_base.gd" id="1_vsldi"]
+
+[node name="PreviewTropaBase" type="Node2D" unique_id=1934603253]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_vsldi")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=2028198624]
+scale = Vector2(0.175, 0.175)
+texture = ExtResource("1_tmk2p")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1052006096]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

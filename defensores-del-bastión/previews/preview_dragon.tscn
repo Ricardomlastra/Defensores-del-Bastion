@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://6g34rjtyn16w"]
+
+[ext_resource type="Script" uid="uid://clg0t8ljqnhs" path="res://previews/preview_dragon.gd" id="1_hocwx"]
+[ext_resource type="Texture2D" uid="uid://c5vehfe1l7xuu" path="res://Texturas/TexturasReales/dragon_tropa.png" id="1_l41rs"]
+
+[node name="PreviewDragon" type="Node2D" unique_id=181388907]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_hocwx")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=118791706]
+scale = Vector2(0.293, 0.293)
+texture = ExtResource("1_l41rs")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1471924585]
+offset_left = 64.0
+offset_top = -16.0
+offset_right = 208.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://bnv7i3lxu326n"]
+
+[ext_resource type="Script" uid="uid://frckuvc06mqh" path="res://scenes/scripts/Tropas/paladin.gd" id="1_fm4g8"]
+[ext_resource type="Texture2D" uid="uid://bamj320l3yxci" path="res://Texturas/TexturasReales/paladin_tropa.png" id="2_fm4g8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fm4g8"]
+size = Vector2(50, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q4ql4"]
+size = Vector2(32, 32)
+
+[node name="paladin" type="CharacterBody2D" unique_id=437857805 groups=["tropas"]]
+script = ExtResource("1_fm4g8")
+
+[node name="Detector" type="Area2D" parent="." unique_id=1651696523]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=894607176]
+position = Vector2(15, 0)
+shape = SubResource("RectangleShape2D_fm4g8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1119047579]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_fm4g8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=319871647]
+shape = SubResource("RectangleShape2D_q4ql4")
+debug_color = Color(0.57125926, 0.40031025, 0.976687, 0.41960785)
+
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=1806772097]
+modulate = Color(0.8150196, 3.5857408e-06, 7.70092e-07, 1)
+offset_left = -32.0
+offset_top = -64.0
+offset_right = 32.0
+offset_bottom = -48.13591
+show_percentage = false
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dpjyx0dlfl576"]
+
+[ext_resource type="Texture2D" uid="uid://iaa581oti7qa" path="res://Texturas/TexturasReales/maestro_de_drones_tropa.png" id="1_fwult"]
+[ext_resource type="Script" uid="uid://bm46cs4xovfxc" path="res://previews/preview_maestro_de_drones.gd" id="1_xl5eo"]
+
+[node name="PreviewMaestroDeDrones" type="Node2D" unique_id=920746533]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_xl5eo")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=1317584045]
+position = Vector2(15.999999, -16)
+scale = Vector2(0.193, 0.193)
+texture = ExtResource("1_fwult")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1618140787]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)
+
+[node name="Alcance2" type="ColorRect" parent="." unique_id=1367535473]
+offset_top = -96.0
+offset_right = 16.0
+offset_bottom = -64.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)
+
+[node name="Alcance3" type="ColorRect" parent="." unique_id=1700415119]
+offset_top = 48.0
+offset_right = 16.0
+offset_bottom = 80.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

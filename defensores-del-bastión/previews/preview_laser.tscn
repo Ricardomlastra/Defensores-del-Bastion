@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bcjdu7s8a55fl"]
+
+[ext_resource type="Texture2D" uid="uid://drpoypieln5qs" path="res://Texturas/TexturasReales/laser_tropa.png" id="1_gk1px"]
+[ext_resource type="Script" uid="uid://cnc6ia4xaka17" path="res://previews/preview_laser.gd" id="1_q1r6g"]
+
+[node name="PreviewLaser" type="Node2D" unique_id=22331447]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_q1r6g")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=1842904238]
+position = Vector2(-9.536743e-07, -9.536743e-07)
+scale = Vector2(0.193, 0.193)
+texture = ExtResource("1_gk1px")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=632470312]
+offset_top = -355.961
+offset_right = 16.0
+offset_bottom = -323.961
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

@@ -1,0 +1,609 @@
+[gd_scene format=3 uid="uid://d04w4257m7nk4"]
+
+[ext_resource type="Script" uid="uid://cewhplhdi0ppy" path="res://scenes/scripts/base.gd" id="1_tbgi4"]
+[ext_resource type="Script" uid="uid://crp0t3incjgee" path="res://scenes/scripts/main.gd" id="1_tefeu"]
+[ext_resource type="PackedScene" uid="uid://cxgp6it3yfeeu" path="res://scenes/enemigo.tscn" id="2_0wfyh"]
+[ext_resource type="Texture2D" uid="uid://b1q07ve2qpdqv" path="res://Texturas/TexturasReales/Base.png" id="4_e755i"]
+[ext_resource type="Texture2D" uid="uid://cbbx5mbxj48xq" path="res://Texturas/TexturasReales/pausa.png" id="5_5he1u"]
+[ext_resource type="Texture2D" uid="uid://b574scqjpm0ay" path="res://Texturas/TexturasReales/game_over.png" id="6_5poiv"]
+[ext_resource type="Script" uid="uid://umiethm3l3h3" path="res://scenes/scripts/Suelo/slot_1.gd" id="8_tipki"]
+[ext_resource type="Script" uid="uid://uiwluyl8aqxn" path="res://scenes/scripts/Suelo/slot_2.gd" id="9_85g3d"]
+[ext_resource type="Script" uid="uid://dxnopripbrgg0" path="res://scenes/scripts/Suelo/slot_3.gd" id="10_eb6dy"]
+[ext_resource type="Script" uid="uid://ygj4pku4w5f7" path="res://scenes/scripts/Suelo/slot_4.gd" id="11_trceg"]
+[ext_resource type="Script" uid="uid://7slbur3ft531" path="res://scenes/scripts/Suelo/slot_5.gd" id="12_a8y0u"]
+[ext_resource type="Script" uid="uid://dstkdukmhhqcq" path="res://scenes/scripts/Suelo/slot_6.gd" id="13_trceg"]
+[ext_resource type="Script" uid="uid://dmysfqthrx5s3" path="res://scenes/scripts/Suelo/slot_7.gd" id="14_2cjbq"]
+[ext_resource type="Script" uid="uid://bdfkwtw70hbq" path="res://scenes/scripts/Suelo/slot_8.gd" id="15_chjal"]
+[ext_resource type="Script" uid="uid://bm2o8trw5vx04" path="res://scenes/scripts/Suelo/slot_9.gd" id="16_cjqg0"]
+[ext_resource type="Script" uid="uid://b1n1kjype55l0" path="res://scenes/scripts/Suelo/slot_10.gd" id="17_vchkt"]
+[ext_resource type="Script" uid="uid://dktefpdrn7sjg" path="res://scenes/scripts/Suelo/slot_11.gd" id="18_txyw0"]
+[ext_resource type="Script" uid="uid://bbaxs5jf5jghp" path="res://scenes/scripts/Suelo/slot_12.gd" id="19_vc5cj"]
+[ext_resource type="Script" uid="uid://huqwojmc2g32" path="res://scenes/scripts/Suelo/slot_13.gd" id="20_nvyfr"]
+[ext_resource type="Script" uid="uid://c8yskp53xqq6a" path="res://scenes/scripts/Suelo/slot_14.gd" id="21_ty1g6"]
+[ext_resource type="Script" uid="uid://b6dy47cb24u16" path="res://scenes/scripts/Suelo/slot_15.gd" id="22_j2jfr"]
+[ext_resource type="Script" uid="uid://qxnn3v01fqsa" path="res://scenes/scripts/Suelo/slot_16.gd" id="23_bjg73"]
+[ext_resource type="Script" uid="uid://cm05y7md4w30t" path="res://scenes/scripts/Suelo/slot_17.gd" id="24_bu4jf"]
+[ext_resource type="Script" uid="uid://ba2178y0tnqvr" path="res://scenes/scripts/Suelo/slot_18.gd" id="25_o7ddy"]
+[ext_resource type="Script" uid="uid://bv3edpdtt1vye" path="res://scenes/scripts/Suelo/slot_19.gd" id="26_0loja"]
+[ext_resource type="Script" uid="uid://b374ruyr6ae6y" path="res://scenes/scripts/Suelo/slot_20.gd" id="27_ids8r"]
+[ext_resource type="Script" uid="uid://c58yrvy7m6jdt" path="res://scenes/scripts/Suelo/slot_21.gd" id="28_dnhof"]
+[ext_resource type="Script" uid="uid://cs2f501ctflup" path="res://scenes/scripts/Suelo/slot_22.gd" id="29_1v6qk"]
+[ext_resource type="Script" uid="uid://bt1bnekwy8ixm" path="res://scenes/scripts/Suelo/slot_23.gd" id="30_augu2"]
+[ext_resource type="Script" uid="uid://cednbano71cpu" path="res://scenes/scripts/Suelo/slot_24.gd" id="31_tm6hj"]
+[ext_resource type="Script" uid="uid://0o3yam0orp3x" path="res://scenes/scripts/Suelo/slot_25.gd" id="32_kf5aa"]
+[ext_resource type="Script" uid="uid://fac78s34ax47" path="res://scenes/scripts/Suelo/slot_26.gd" id="33_t5ykj"]
+[ext_resource type="Script" uid="uid://bit270yamp5kp" path="res://scenes/scripts/Suelo/slot_27.gd" id="34_e755i"]
+[ext_resource type="Script" uid="uid://dielgyyeybrkd" path="res://scenes/scripts/Suelo/slot_28.gd" id="35_ro3en"]
+[ext_resource type="Script" uid="uid://r4yfjwy4xrx1" path="res://scenes/scripts/Suelo/slot_29.gd" id="36_od4ux"]
+[ext_resource type="Script" uid="uid://bcgin3b83jy8g" path="res://scenes/scripts/Suelo/slot_30.gd" id="37_xhfw6"]
+[ext_resource type="Script" uid="uid://cut281vghu3q" path="res://scenes/scripts/Suelo/slot_31.gd" id="38_1epgm"]
+[ext_resource type="Script" uid="uid://bl7t74gx4hkkx" path="res://scenes/scripts/Suelo/slot_32.gd" id="39_152kg"]
+[ext_resource type="Script" uid="uid://cyvfych35ruvr" path="res://scenes/scripts/Suelo/slot_33.gd" id="40_r4e17"]
+[ext_resource type="Script" uid="uid://btjqxuvstpdhu" path="res://scenes/scripts/Suelo/slot_34.gd" id="41_y57op"]
+[ext_resource type="Script" uid="uid://c3cw3gu540i7s" path="res://scenes/scripts/Suelo/slot_35.gd" id="42_mlv25"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0xm2m"]
+size = Vector2(21.382902, 34.037025)
+
+[sub_resource type="LabelSettings" id="LabelSettings_tefeu"]
+font_size = 20
+font_color = Color(0, 0.6627451, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_o6xl0"]
+font_color = Color(0, 0, 0.74509805, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tbgi4"]
+size = Vector2(120, 40)
+
+[node name="Main" type="Node2D" unique_id=453063943]
+scale = Vector2(1.1117742, 1.1125875)
+script = ExtResource("1_tefeu")
+escena_enemigo = ExtResource("2_0wfyh")
+
+[node name="Base" type="StaticBody2D" parent="." unique_id=841205768]
+position = Vector2(827, 477)
+scale = Vector2(0.18, 0.29600123)
+script = ExtResource("1_tbgi4")
+
+[node name="Sprite2D" type="Sprite2D" parent="Base" unique_id=1001249968]
+position = Vector2(-1396.3527, -506.19617)
+scale = Vector2(14.670141, 9.022723)
+texture = ExtResource("4_e755i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Base" unique_id=324511797]
+position = Vector2(-4461.111, 10.135132)
+rotation = -2.7046208
+scale = Vector2(61.501484, 38.806507)
+skew = 0.46482742
+shape = SubResource("RectangleShape2D_0xm2m")
+debug_color = Color(0.511179, 0.43611878, 0.96957475, 0.41960785)
+
+[node name="BarraVida" type="ProgressBar" parent="Base" unique_id=285112184]
+modulate = Color(1, 0, 0, 0.6862745)
+offset_left = -4514.4917
+offset_top = -1149.9329
+offset_right = -3435.1357
+offset_bottom = -1001.473
+max_value = 200.0
+value = 200.0
+show_percentage = false
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1354119290]
+
+[node name="OleadaLabel" type="Label" parent="UI" unique_id=592594829]
+anchors_preset = -1
+anchor_top = -0.022222223
+anchor_bottom = -0.022222223
+offset_left = 832.0
+offset_top = 40.0
+offset_right = 968.0
+offset_bottom = 127.0
+scale = Vector2(1.1117742, 1.1125875)
+text = "Oleada: 1
+"
+label_settings = SubResource("LabelSettings_tefeu")
+metadata/_edit_use_anchors_ = true
+
+[node name="EnergiaLabel" type="Label" parent="UI" unique_id=97741964]
+offset_left = 976.0
+offset_right = 1094.0
+offset_bottom = 23.0
+scale = Vector2(1.1117742, 1.1125875)
+text = "Energía: 15 / 30"
+label_settings = SubResource("LabelSettings_o6xl0")
+horizontal_alignment = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="CartasUI" type="HBoxContainer" parent="UI" unique_id=329735333]
+offset_left = 132.30113
+offset_right = 485.30115
+offset_bottom = 48.0
+metadata/_edit_use_anchors_ = true
+
+[node name="BotonPausa" type="Button" parent="UI" unique_id=928416082]
+process_mode = 3
+offset_left = 1224.0
+offset_top = 8.0
+offset_right = 2256.0
+offset_bottom = 1552.0
+scale = Vector2(0.04929459, 0.04015257)
+icon = ExtResource("5_5he1u")
+
+[node name="MenuPausa" type="Panel" parent="UI" unique_id=215302993]
+process_mode = 3
+visible = false
+offset_right = 1280.0
+offset_bottom = 728.0
+
+[node name="Continuar" type="Button" parent="UI/MenuPausa" unique_id=2041838209]
+process_mode = 3
+layout_mode = 0
+offset_left = 480.0
+offset_top = 192.0
+offset_right = 800.0
+offset_bottom = 328.0
+text = "Continuar"
+
+[node name="Salir" type="Button" parent="UI/MenuPausa" unique_id=604472140]
+process_mode = 3
+layout_mode = 0
+offset_left = 480.0
+offset_top = 384.0
+offset_right = 800.0
+offset_bottom = 520.0
+text = "Salir"
+
+[node name="MenuGameOver" type="Panel" parent="UI" unique_id=1694756742]
+process_mode = 3
+visible = false
+offset_right = 1280.0
+offset_bottom = 728.0
+
+[node name="Reintentar" type="Button" parent="UI/MenuGameOver" unique_id=653970465]
+process_mode = 3
+layout_mode = 0
+offset_left = 480.0
+offset_top = 357.0
+offset_right = 800.0
+offset_bottom = 493.0
+text = "Reintentar
+"
+
+[node name="Salir" type="Button" parent="UI/MenuGameOver" unique_id=1651729678]
+process_mode = 3
+layout_mode = 0
+offset_left = 480.0
+offset_top = 549.0
+offset_right = 800.0
+offset_bottom = 685.0
+text = "Salir"
+
+[node name="TextureRect" type="TextureRect" parent="UI/MenuGameOver" unique_id=699332124]
+layout_mode = 0
+offset_left = 384.0
+offset_top = 24.0
+offset_right = 896.0
+offset_bottom = 320.0
+texture = ExtResource("6_5poiv")
+expand_mode = 1
+
+[node name="BotonVelocidad" type="Button" parent="UI" unique_id=1135366742]
+offset_left = 1160.0
+offset_top = 8.0
+offset_right = 1216.0
+offset_bottom = 72.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_constants/outline_size = 5
+text = "x1"
+
+[node name="Spawner1" type="Node2D" parent="." unique_id=590484615 groups=["spawners"]]
+position = Vector2(1408, 448)
+scale = Vector2(0.5, 0.5)
+
+[node name="Spawner2" type="Node2D" parent="." unique_id=2110640888 groups=["spawners"]]
+position = Vector2(1408, 489)
+scale = Vector2(0.5, 0.5)
+
+[node name="Spawner3" type="Node2D" parent="." unique_id=435667298 groups=["spawners"]]
+position = Vector2(1408, 530)
+scale = Vector2(0.5, 0.5)
+
+[node name="Spawner4" type="Node2D" parent="." unique_id=1906781231 groups=["spawners"]]
+position = Vector2(1408, 571)
+scale = Vector2(0.5, 0.5)
+
+[node name="Spawner5" type="Node2D" parent="." unique_id=679817795 groups=["spawners"]]
+position = Vector2(1408, 612)
+scale = Vector2(0.5, 0.5)
+
+[node name="Slot1" type="Area2D" parent="." unique_id=372611489 groups=["slots"]]
+position = Vector2(300, 448)
+script = ExtResource("8_tipki")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot1" unique_id=627039505]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot1" unique_id=1026961792]
+
+[node name="Slot2" type="Area2D" parent="." unique_id=1317159838 groups=["slots"]]
+position = Vector2(234, 489)
+script = ExtResource("9_85g3d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot2" unique_id=881649507]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot2" unique_id=538328731]
+
+[node name="Slot3" type="Area2D" parent="." unique_id=612516635 groups=["slots"]]
+position = Vector2(300, 530)
+script = ExtResource("10_eb6dy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot3" unique_id=698084877]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot3" unique_id=1363359169]
+
+[node name="Slot4" type="Area2D" parent="." unique_id=1179182914 groups=["slots"]]
+position = Vector2(234, 571)
+script = ExtResource("11_trceg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot4" unique_id=2093614438]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot4" unique_id=587473838]
+
+[node name="Slot5" type="Area2D" parent="." unique_id=130745633 groups=["slots"]]
+position = Vector2(300, 612)
+script = ExtResource("12_a8y0u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot5" unique_id=703667029]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot5" unique_id=49110124]
+
+[node name="Slot6" type="Area2D" parent="." unique_id=586813675 groups=["slots"]]
+position = Vector2(429, 448)
+script = ExtResource("13_trceg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot6" unique_id=1257780270]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot6" unique_id=467215146]
+
+[node name="Slot7" type="Area2D" parent="." unique_id=6773741 groups=["slots"]]
+position = Vector2(363, 489)
+script = ExtResource("14_2cjbq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot7" unique_id=1304255961]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot7" unique_id=1445205125]
+
+[node name="Slot8" type="Area2D" parent="." unique_id=1121173643 groups=["slots"]]
+position = Vector2(429, 530)
+script = ExtResource("15_chjal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot8" unique_id=1104303750]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot8" unique_id=1120864228]
+
+[node name="Slot9" type="Area2D" parent="." unique_id=376294388 groups=["slots"]]
+position = Vector2(363, 571)
+script = ExtResource("16_cjqg0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot9" unique_id=858741583]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot9" unique_id=997360873]
+
+[node name="Slot10" type="Area2D" parent="." unique_id=1703141991 groups=["slots"]]
+position = Vector2(429, 612)
+script = ExtResource("17_vchkt")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot10" unique_id=1706198257]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot10" unique_id=2085031539]
+
+[node name="Slot11" type="Area2D" parent="." unique_id=95718992 groups=["slots"]]
+position = Vector2(561, 448)
+script = ExtResource("18_txyw0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot11" unique_id=695867278]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot11" unique_id=136286507]
+
+[node name="Slot12" type="Area2D" parent="." unique_id=1308333531 groups=["slots"]]
+position = Vector2(495, 489)
+script = ExtResource("19_vc5cj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot12" unique_id=912024563]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot12" unique_id=2084007365]
+
+[node name="Slot13" type="Area2D" parent="." unique_id=918174743 groups=["slots"]]
+position = Vector2(561, 530)
+script = ExtResource("20_nvyfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot13" unique_id=1748147315]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot13" unique_id=1258865516]
+
+[node name="Slot14" type="Area2D" parent="." unique_id=1603007409 groups=["slots"]]
+position = Vector2(495, 571)
+script = ExtResource("21_ty1g6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot14" unique_id=127107635]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot14" unique_id=1294411800]
+
+[node name="Slot15" type="Area2D" parent="." unique_id=1093613869 groups=["slots"]]
+position = Vector2(561, 612)
+script = ExtResource("22_j2jfr")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot15" unique_id=743475646]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot15" unique_id=2092016483]
+
+[node name="Slot16" type="Area2D" parent="." unique_id=721327719 groups=["slots"]]
+position = Vector2(693, 448)
+script = ExtResource("23_bjg73")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot16" unique_id=1279370600]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot16" unique_id=741207432]
+
+[node name="Slot17" type="Area2D" parent="." unique_id=1395887026 groups=["slots"]]
+position = Vector2(627, 489)
+script = ExtResource("24_bu4jf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot17" unique_id=1323850314]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot17" unique_id=1425432376]
+
+[node name="Slot18" type="Area2D" parent="." unique_id=1535839004 groups=["slots"]]
+position = Vector2(693, 530)
+script = ExtResource("25_o7ddy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot18" unique_id=1722081728]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot18" unique_id=1971865014]
+
+[node name="Slot19" type="Area2D" parent="." unique_id=1691859731 groups=["slots"]]
+position = Vector2(627, 571)
+script = ExtResource("26_0loja")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot19" unique_id=2002013697]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot19" unique_id=330921658]
+
+[node name="Slot20" type="Area2D" parent="." unique_id=1469232330 groups=["slots"]]
+position = Vector2(693, 612)
+script = ExtResource("27_ids8r")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot20" unique_id=557068134]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot20" unique_id=172390122]
+
+[node name="Slot21" type="Area2D" parent="." unique_id=1533756017 groups=["slots"]]
+position = Vector2(822, 448)
+script = ExtResource("28_dnhof")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot21" unique_id=1288817292]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot21" unique_id=53843911]
+
+[node name="Slot22" type="Area2D" parent="." unique_id=730989925 groups=["slots"]]
+position = Vector2(756, 489)
+script = ExtResource("29_1v6qk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot22" unique_id=1440578570]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot22" unique_id=1342302530]
+
+[node name="Slot23" type="Area2D" parent="." unique_id=722978539 groups=["slots"]]
+position = Vector2(822, 530)
+script = ExtResource("30_augu2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot23" unique_id=40765976]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot23" unique_id=1296382828]
+
+[node name="Slot24" type="Area2D" parent="." unique_id=112903144 groups=["slots"]]
+position = Vector2(756, 571)
+script = ExtResource("31_tm6hj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot24" unique_id=910859282]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot24" unique_id=1740803246]
+
+[node name="Slot25" type="Area2D" parent="." unique_id=105601677 groups=["slots"]]
+position = Vector2(822, 612)
+script = ExtResource("32_kf5aa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot25" unique_id=1329052654]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot25" unique_id=1111402037]
+
+[node name="Slot26" type="Area2D" parent="." unique_id=1085726520 groups=["slots"]]
+position = Vector2(954, 448)
+script = ExtResource("33_t5ykj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot26" unique_id=1109129932]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot26" unique_id=2086222003]
+
+[node name="Slot27" type="Area2D" parent="." unique_id=443528633 groups=["slots"]]
+position = Vector2(888, 489)
+script = ExtResource("34_e755i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot27" unique_id=258163307]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot27" unique_id=1603588815]
+
+[node name="Slot28" type="Area2D" parent="." unique_id=1878781224 groups=["slots"]]
+position = Vector2(954, 530)
+script = ExtResource("35_ro3en")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot28" unique_id=407128487]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot28" unique_id=775252848]
+
+[node name="Slot29" type="Area2D" parent="." unique_id=1635167013 groups=["slots"]]
+position = Vector2(888, 571)
+script = ExtResource("36_od4ux")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot29" unique_id=894060514]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot29" unique_id=1530726134]
+
+[node name="Slot30" type="Area2D" parent="." unique_id=419130503 groups=["slots"]]
+position = Vector2(954, 612)
+script = ExtResource("37_xhfw6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot30" unique_id=1007675513]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot30" unique_id=1951676571]
+
+[node name="Slot31" type="Area2D" parent="." unique_id=2019929523 groups=["slots"]]
+position = Vector2(1086, 448)
+script = ExtResource("38_1epgm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot31" unique_id=239872330]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot31" unique_id=886117025]
+
+[node name="Slot32" type="Area2D" parent="." unique_id=1250219301 groups=["slots"]]
+position = Vector2(1020, 489)
+script = ExtResource("39_152kg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot32" unique_id=232366390]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot32" unique_id=232546232]
+
+[node name="Slot33" type="Area2D" parent="." unique_id=276018769 groups=["slots"]]
+position = Vector2(1086, 530)
+script = ExtResource("40_r4e17")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot33" unique_id=963938134]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot33" unique_id=928835777]
+
+[node name="Slot34" type="Area2D" parent="." unique_id=589208027 groups=["slots"]]
+position = Vector2(1020, 571)
+script = ExtResource("41_y57op")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot34" unique_id=43669754]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot34" unique_id=474892345]
+
+[node name="Slot35" type="Area2D" parent="." unique_id=556077419 groups=["slots"]]
+position = Vector2(1086, 612)
+script = ExtResource("42_mlv25")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Slot35" unique_id=456008296]
+position = Vector2(0, 20)
+shape = SubResource("RectangleShape2D_tbgi4")
+debug_color = Color(0, 0.7254902, 0.023529412, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="Slot35" unique_id=1685784448]
+
+[connection signal="pressed" from="UI/BotonPausa" to="." method="_on_boton_pausa_pressed"]
+[connection signal="pressed" from="UI/MenuPausa/Continuar" to="." method="_on_continuar_pressed"]
+[connection signal="pressed" from="UI/MenuPausa/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="UI/MenuGameOver/Reintentar" to="." method="_on_reintentar_pressed"]
+[connection signal="pressed" from="UI/MenuGameOver/Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="UI/BotonVelocidad" to="." method="_on_boton_velocidad_pressed"]

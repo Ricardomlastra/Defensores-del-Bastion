@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://c77v12754by8i"]
+
+[ext_resource type="Script" uid="uid://bd3yyk34qa5k3" path="res://scenes/scripts/menu_principal.gd" id="1_mk4g1"]
+[ext_resource type="Texture2D" uid="uid://b1q07ve2qpdqv" path="res://Texturas/TexturasReales/Base.png" id="2_iep14"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_lf1kt"]
+font_size = 40
+font_color = Color(0.7226139, 0.7222363, 0, 1)
+outline_size = 20
+outline_color = Color(0.16078432, 0.16078432, 0.16078432, 1)
+
+[node name="MenuPrincipal" type="Control" unique_id=770004920]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_mk4g1")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1162794213]
+position = Vector2(640, 464.00006)
+scale = Vector2(10.972477, 8.720918)
+texture = ExtResource("2_iep14")
+
+[node name="Label" type="Label" parent="." unique_id=1894674977]
+layout_mode = 0
+offset_left = 419.0
+offset_top = 142.0
+offset_right = 864.0
+offset_bottom = 197.0
+text = "Defensores del Bastión"
+label_settings = SubResource("LabelSettings_lf1kt")
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1970736429]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 296.0
+offset_right = 704.0
+offset_bottom = 359.0
+text = "Jugar"
+
+[node name="Button2" type="Button" parent="." unique_id=1028284940]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 384.0
+offset_right = 704.0
+offset_bottom = 448.0
+text = "Mazo"
+
+[node name="Button3" type="Button" parent="." unique_id=1505389739]
+layout_mode = 0
+offset_left = 576.0
+offset_top = 472.0
+offset_right = 704.0
+offset_bottom = 536.0
+text = "Salir
+"
+
+[node name="Label2" type="Label" parent="." unique_id=823567369]
+visible = false
+modulate = Color(0.8862745, 0, 0, 1)
+layout_mode = 0
+offset_left = 712.0
+offset_top = 376.0
+offset_right = 813.0
+offset_bottom = 451.0
+text = "Mazo 
+no 
+seleccionado"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]

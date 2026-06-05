@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dm0hpewou4dkr"]
+
+[ext_resource type="Texture2D" uid="uid://csxmb8f2yuyhh" path="res://Texturas/TexturasReales/mago_electrico_tropa.png" id="1_r4atf"]
+[ext_resource type="Script" uid="uid://c1ea5fws3fcbq" path="res://previews/preview_mago_electrico.gd" id="1_yvvac"]
+
+[node name="PreviewMegoElectrico" type="Node2D" unique_id=1180588616]
+script = ExtResource("1_yvvac")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1238619460]
+position = Vector2(23.999998, -7.9999995)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_r4atf")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1774601032]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

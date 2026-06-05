@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d30548seug4tb"]
+
+[ext_resource type="Script" uid="uid://c3kllqa6tcwi1" path="res://previews/preview_arquero_hielo.gd" id="1_rpja6"]
+[ext_resource type="Texture2D" uid="uid://byy77jkgv6cuy" path="res://Texturas/TexturasReales/arquero_hielo_tropa.png" id="1_t2pbo"]
+
+[node name="PreviewArqueroHielo" type="Node2D" unique_id=184156785]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_rpja6")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=961051111]
+position = Vector2(16, 0)
+scale = Vector2(0.19271486, 0.18001954)
+texture = ExtResource("1_t2pbo")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1564024258]
+offset_left = 256.0
+offset_top = -16.0
+offset_right = 400.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

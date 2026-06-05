@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bx7ngswm22ivl"]
+
+[ext_resource type="Texture2D" uid="uid://c1cvq8u48bvnx" path="res://Texturas/TexturasReales/monarca_de_las_sombras_tropa.png" id="1_jw2l1"]
+[ext_resource type="Script" uid="uid://iobd3a5lp5ra" path="res://previews/preview_monarca_de_las_sombras.gd" id="1_y36sr"]
+
+[node name="PreviewMonarcaDeLasSombras" type="Node2D" unique_id=1154916728]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_y36sr")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=1621897546]
+position = Vector2(-5.684342e-14, -15.999999)
+scale = Vector2(0.1418162, 0.14181617)
+texture = ExtResource("1_jw2l1")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=722232580]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

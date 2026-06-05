@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bxun1uxfp44ts"]
+
+[ext_resource type="Script" uid="uid://dkbcpw60sucsf" path="res://previews/preview_central.gd" id="1_a4ne0"]
+[ext_resource type="Texture2D" uid="uid://cf5xklg04thc4" path="res://Texturas/TexturasReales/central_tropa.png" id="1_lqit8"]
+
+[node name="PreviewCentral" type="Node2D" unique_id=654254533]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_a4ne0")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=865888776]
+position = Vector2(-2.2737368e-13, 31.999996)
+scale = Vector2(0.293, 0.293)
+texture = ExtResource("1_lqit8")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=773739916]
+offset_top = -16.0
+offset_right = 512.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)

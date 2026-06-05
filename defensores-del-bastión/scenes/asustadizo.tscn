@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://ckqp5coc5eft0"]
+
+[ext_resource type="Script" uid="uid://cobp1xmc8d52b" path="res://scenes/scripts/Tropas/asustadizo.gd" id="1_fg3qn"]
+[ext_resource type="Texture2D" uid="uid://ben0jsxue72y" path="res://Texturas/TexturasReales/asustadizo_tropa.png" id="2_fg3qn"]
+[ext_resource type="Texture2D" uid="uid://bsgfik4x3dxg5" path="res://Texturas/Animaciones/Asustadizo/Attack/frame_1.png" id="3_ya0ip"]
+[ext_resource type="Texture2D" uid="uid://wcjnuo71tyh2" path="res://Texturas/Animaciones/Asustadizo/Attack/frame_2.png" id="4_ompry"]
+[ext_resource type="Texture2D" uid="uid://svfu2h0cap6c" path="res://Texturas/Animaciones/Asustadizo/Attack/frame_3.png" id="5_sox1a"]
+[ext_resource type="Texture2D" uid="uid://cop2rtvr8c226" path="res://Texturas/Animaciones/Asustadizo/Attack/frame_4.png" id="6_8867l"]
+[ext_resource type="Texture2D" uid="uid://cb75dtqdlbwc5" path="res://Texturas/Animaciones/Asustadizo/Attack/frame_5.png" id="7_ompry"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rsi2c"]
+size = Vector2(504.07813, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kbtrk"]
+size = Vector2(64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x1u0d"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_ya0ip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ompry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8867l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ompry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ya0ip")
+}],
+"loop": false,
+"name": &"attack",
+"speed": 4.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Asustadizo" type="CharacterBody2D" unique_id=348983050 groups=["tropas"]]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_fg3qn")
+dano = 20
+tiempo_ataque = 0.5
+vida_maxima = 50
+
+[node name="Detector" type="Area2D" parent="." unique_id=316993980]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detector" unique_id=677214698]
+position = Vector2(259.96094, 0)
+shape = SubResource("RectangleShape2D_rsi2c")
+
+[node name="Sprite2D(no texturas)" type="Sprite2D" parent="." unique_id=2115498931]
+position = Vector2(0, -16)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_fg3qn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1673843984]
+shape = SubResource("RectangleShape2D_kbtrk")
+debug_color = Color(0.57125926, 0.40031025, 0.976687, 0.41960785)
+
+[node name="BarraVida" type="ProgressBar" parent="." unique_id=1693535551]
+modulate = Color(0.8150196, 3.5857408e-06, 7.70092e-07, 1)
+offset_left = -48.0
+offset_top = -128.0
+offset_right = 80.0
+offset_bottom = -101.0
+scale = Vector2(0.7599988, 1)
+show_percentage = false
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1042897729]
+visible = false
+position = Vector2(0, -16)
+scale = Vector2(0.290625, 0.28541666)
+sprite_frames = SubResource("SpriteFrames_x1u0d")
+animation = &"attack"
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]

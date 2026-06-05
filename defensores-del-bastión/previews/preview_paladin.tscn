@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ba3ytgxdq3hj4"]
+
+[ext_resource type="Texture2D" uid="uid://bamj320l3yxci" path="res://Texturas/TexturasReales/paladin_tropa.png" id="1_86gqu"]
+[ext_resource type="Script" uid="uid://djs2hq5cfjy67" path="res://previews/preview_paladin.gd" id="1_w82s4"]
+
+[node name="PreviewPaladin" type="Node2D" unique_id=1391621905]
+script = ExtResource("1_w82s4")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1392843057]
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("1_86gqu")
+
+[node name="Alcance" type="ColorRect" parent="." unique_id=1855803632]
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+color = Color(0.16862746, 0.41568628, 1, 0.3137255)
